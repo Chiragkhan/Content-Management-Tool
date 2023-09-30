@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Content Management Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blog Content Management Tool</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Create a New Blog Post</h2>
+      <form id="blogForm">
+        <input type="text" id="title" placeholder="Enter the title">
+        <textarea id="content" placeholder="Write your blog post here"></textarea>
+        <label for="image">Image Upload:</label>
+        <input type="file" id="image" accept="image/*" required>
+  
+        <label for="video">Video Upload:</label>
+        <input type="file" id="video" accept="video/*" required>
+  
+        <button type="Publish">Publish</button>
+  
+      </form>
+    </section>
+    <section>
+      <h2>Existing Blog Posts</h2>
+      <div id="blogList"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+
+</body>
+</html>
